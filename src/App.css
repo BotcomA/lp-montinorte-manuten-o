@@ -1,0 +1,259 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.conteudo {
+  flex: 1;
+  background-image: url('/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-manutencao {
+  text-align: center;
+  font-family: Arial;
+}
+
+.texto-superior {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.logo {
+  width: 40%;
+}
+
+.nome {
+  font-size: 150px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 35px;
+  color: #333;
+  margin: 0;
+  margin-top: -20px;
+  padding-right: 10%;
+}
+
+.container-manutencao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.lado-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.rodape {
+  background: #d90000;
+  color: white;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.conteiner-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.rodape-esquerdo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+}
+
+.logo-rodape {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.redes-sociais svg {
+  font-size: 28px;
+}
+
+.rodape-direito {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.info-contato {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info-contato svg {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+.copyright {
+  font-size: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.linha {
+  width: 40%;
+  border: 0.1px solid #a8a8a8;
+  justify-self: center;
+}
+
+/* ========================= */
+/* CORREÇÕES APENAS MOBILE   */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .logo {
+    width: 50%;
+  }
+
+  .nome {
+    font-size: 110px;
+  }
+
+  .subtitulo {
+    font-size: 28px;
+    padding-right: 5%;
+  }
+
+  .texto-superior {
+    font-size: 32px;
+  }
+
+  .info-contato {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 18px;
+  }
+
+  .redes-sociais svg {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-manutencao {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .lado-imagem {
+    width: 100%;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .nome {
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+    margin-top: 5px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .texto-superior {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .conteiner-rodape {
+    flex-direction: column;
+    padding: 10px 5%;
+    gap: 20px;
+  }
+
+  .rodape-esquerdo,
+  .rodape-direito {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-rodape {
+    width: 60%;
+  }
+
+  .info-contato {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .redes-sociais {
+    justify-content: center;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 85%;
+  }
+
+  .nome {
+    font-size: 54px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .texto-superior {
+    font-size: 18px;
+  }
+
+  .logo-rodape {
+    width: 85%;
+  }
+
+  .info-contato {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
